@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dr. Saram Ahsan - MBBS Graduate & Founder of Sibgha Doctors Academy, Gujranwala. Expert teaching for Matric, FSC, O-Level & A-Level students. Admissions Open 2026.">
+<meta name="keywords" content="Sibgha Doctors Academy, Dr Saram Ahsan, MBBS tutor Gujranwala, FSC tuition, O level tuition, medical academy Gujranwala, doctors academy Pakistan">
+<meta property="og:title" content="Dr. Saram Ahsan | Sibgha Doctors Academy">
+<meta property="og:description" content="Shaping Future Doctors — Expert teaching by MBBS doctors. Admissions Open 2026.">
+<meta property="og:image" content="assets/saram-ahsan.jpg">
+<meta name="theme-color" content="#0D2149">
+<link rel="preload" as="image" href="assets/saram-ahsan.jpg">
+<title>Dr. Saram Ahsan | Sibgha Doctors Academy</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0D2149;
+    --teal: #0B7B6C;
+    --green: #2E7D32;
+    --lime: #6DBE47;
+    --gold: #C8A84B;
+    --white: #FFFFFF;
+    --offwhite: #F7F9FC;
+    --light-gray: #EEF2F7;
+    --text-dark: #0D1B2A;
+    --text-mid: #445566;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ====== NAVBAR ====== */
+  .navbar {
+    background: rgba(13, 33, 73, 0.97);
+    backdrop-filter: blur(12px);
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .navbar.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .brand-logo-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    flex-shrink: 0;
+  }
+
+  .brand-text-main {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+  }
+
+  .brand-text-sub {
+    font-size: 10px;
+    color: var(--lime);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .nav-link {
+    color: rgba(255,255,255,0.82) !important;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 6px 14px !important;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 14px; right: 14px;
+    height: 2px;
+    background: var(--lime);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+  }
+
+  .nav-link:hover { color: white !important; }
+  .nav-link:hover::after { transform: scaleX(1); }
+
+  .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+  .navbar-toggler-icon { filter: invert(1); }
+
+  .btn-wa-nav {
+    background: #25D366;
+    color: white !important;
+    border-radius: 50px;
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s;
+    text-decoration: none;
+  }
+
+  .btn-wa-nav:hover { background: #1ebe5d; transform: translateY(-1px); }
+
+  /* ====== HERO ====== */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071530 0%, #0D2149 45%, #0B3A30 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(109,190,71,0.12) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(11,123,108,0.15) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(200,168,75,0.05) 0%, transparent 70%);
+  }
+
+  .hero-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .hero-content { position: relative; z-index: 2; }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(109,190,71,0.15);
+    border: 1px solid rgba(109,190,71,0.3);
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lime);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-eyebrow span { width: 6px; height: 6px; background: var(--lime); border-radius: 50%; animation: pulse-dot 1.5s infinite; }
+
+  @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 72px);
+    font-weight: 900;
+    color: white;
+    line-height: 1.05;
+    margin-bottom: 10px;
+  }
+
+  .hero-name .accent { color: var(--lime); }
+
+  .hero-role {
+    font-size: clamp(14px, 2vw, 18px);
+    color: rgba(255,255,255,0.65);
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-tagline {
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 28px;
+    line-height: 1.35;
+  }
+
+  .hero-tagline .teal-text { color: #4DD0BE; }
+
+  .hero-desc {
+    color: rgba(255,255,255,0.70);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+  .btn-primary-hero {
+    background: linear-gradient(135deg, var(--teal), var(--green));
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 8px 30px rgba(11,123,108,0.4);
+  }
+
+  .btn-primary-hero:hover { color: white; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(11,123,108,0.5); }
+
+  .btn-outline-hero {
+    background: transparent;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+  }
+
+  .btn-outline-hero:hover { color: white; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); transform: translateY(-3px); }
+
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-item { text-align: left; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--lime);
+    line-height: 1;
+  }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.55); letter-spacing: 0.5px; margin-top: 2px; }
+
+  /* hero image side */
+  .hero-image-col { position: relative; display: flex; align-items: center; justify-content: center; }
+
+  .hero-img-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-main-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(109,190,71,0.4);
+    box-shadow: 0 0 0 15px rgba(109,190,71,0.08), 0 30px 80px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0B3A30, #0D2149);
+    overflow: hidden;
+  }
+
+  .hero-avatar-placeholder {
+    font-size: 120px;
+    color: rgba(109,190,71,0.5);
+  }
+
+  .hero-main-img img,
+  .founder-avatar img,
+  .team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-main-img img {
+    object-position: center 18%;
+  }
+
+  .founder-avatar img,
+  .team-avatar img {
+    object-position: center top;
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    background: linear-gradient(135deg, #C8A84B, #E8C86A);
+    border-radius: 16px;
+    padding: 12px 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(200,168,75,0.4);
+    min-width: 120px;
+  }
+
+  .hero-badge .badge-num { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: #0D2149; line-height: 1; }
+  .hero-badge .badge-txt { font-size: 10px; font-weight: 700; color: #0D2149; letter-spacing: 0.5px; }
+
+  .hero-float-card {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+  .float-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--teal), var(--lime)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+  .float-text { color: white; }
+  .float-text .f-main { font-size: 13px; font-weight: 700; }
+  .float-text .f-sub { font-size: 10px; color: rgba(255,255,255,0.6); }
+
+  /* ====== SECTION STYLES ====== */
+  section { padding: 90px 0; }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--teal);
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .section-title .accent { color: var(--teal); }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--text-mid);
+    line-height: 1.75;
+    max-width: 600px;
+  }
+
+  /* ====== ABOUT ====== */
+  .about-section { background: var(--offwhite); }
+
+  .about-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--teal), var(--lime));
+  }
+
+  .about-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+
+
+  .about-avatar {
+    overflow: hidden;
+    border: 3px solid rgba(11,123,108,0.16);
+    box-shadow: 0 14px 34px rgba(13,33,73,0.12);
+  }
+
+  .about-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .about-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .about-title-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--teal), var(--green));
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+
+  .about-bio { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
+
+  .info-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--light-gray);
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 12.5px;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin: 4px;
+  }
+
+  .info-pill i { color: var(--teal); }
+
+  /* subjects */
+  .subject-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+
+  .subject-tag {
+    background: linear-gradient(135deg, rgba(11,123,108,0.12), rgba(109,190,71,0.12));
+    border: 1px solid rgba(11,123,108,0.25);
+    color: var(--teal);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 50px;
+  }
+
+  /* ====== SESSIONS ====== */
+  .sessions-section { background: white; }
+
+  .session-card {
+    border-radius: 24px;
+    padding: 36px 30px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .session-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+
+  .session-card-1 {
+    background: linear-gradient(135deg, #0D2149 0%, #0B3A30 100%);
+    color: white;
+  }
+
+  .session-card-2 {
+    background: linear-gradient(135deg, #0B7B6C 0%, #2E7D32 100%);
+    color: white;
+  }
+
+  .session-time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--lime);
+    margin-bottom: 20px;
+  }
+
+  .session-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .session-title { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 900; color: white; margin-bottom: 10px; }
+  .session-desc { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.75; margin-bottom: 20px; }
+
+  .session-features { list-style: none; padding: 0; }
+  .session-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 10px;
+  }
+  .session-features li i { color: var(--lime); font-size: 14px; flex-shrink: 0; }
+
+  /* ====== STUDENTS ====== */
+  .students-section { background: var(--offwhite); }
+
+  .student-type-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .student-type-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(11,123,108,0.15); }
+  .student-type-card:hover .st-icon { background: linear-gradient(135deg, var(--teal), var(--lime)); }
+  .student-type-card:hover .st-icon i { color: white; }
+
+  .st-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    transition: all 0.3s;
+  }
+
+  .st-icon i { font-size: 26px; color: var(--teal); transition: color 0.3s; }
+  .st-name { font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .st-desc { font-size: 12.5px; color: var(--text-mid); line-height: 1.5; }
+
+  /* ====== TEAM ====== */
+  .team-section { background: var(--navy); }
+
+  .team-section .section-title { color: white; }
+  .team-section .section-eyebrow { color: var(--lime); }
+  .team-section .section-eyebrow::before { background: var(--lime); }
+  .team-section .section-sub { color: rgba(255,255,255,0.6); }
+
+  .team-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+  }
+
+  .team-card:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(109,190,71,0.4);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+
+  .team-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    border: 3px solid rgba(109,190,71,0.3);
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .team-avatar span {
+    line-height: 1;
+  }
+  .team-name { font-size: 15px; font-weight: 700; color: white; margin-bottom: 4px; }
+  .team-qual {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(109,190,71,0.2);
+    border: 1px solid rgba(109,190,71,0.35);
+    color: var(--lime);
+    padding: 3px 10px;
+    border-radius: 50px;
+    letter-spacing: 0.3px;
+    margin-top: 4px;
+  }
+
+  /* founder card */
+  .founder-card {
+    background: linear-gradient(135deg, rgba(11,123,108,0.3), rgba(109,190,71,0.15));
+    border: 1.5px solid rgba(109,190,71,0.4);
+    border-radius: 24px;
+    padding: 36px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .founder-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-size: 42px;
+    color: rgba(255,255,255,0.8);
+    border: 4px solid rgba(109,190,71,0.5);
+    box-shadow: 0 0 30px rgba(109,190,71,0.2);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .founder-name { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 900; color: white; margin-bottom: 6px; }
+  .founder-role { font-size: 13px; color: var(--lime); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .founder-desc { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.75; max-width: 500px; margin: 0 auto; }
+
+  /* ====== WHY CHOOSE ====== */
+  .why-section { background: white; }
+
+  .why-card {
+    background: var(--offwhite);
+    border-radius: 20px;
+    padding: 30px 24px;
+    height: 100%;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+  }
+
+  .why-card:hover { background: white; border-color: rgba(11,123,108,0.2); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+
+  .why-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--teal), var(--green));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  .why-title { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .why-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.7; }
+
+  /* ====== ADMISSION CTA ====== */
+  .admission-section {
+    background: linear-gradient(135deg, #071530 0%, #0D2149 50%, #0B3A30 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .admission-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 30% 30%, rgba(109,190,71,0.12) 0%, transparent 50%),
+                      radial-gradient(circle at 70% 70%, rgba(11,123,108,0.12) 0%, transparent 50%);
+  }
+
+  .admission-content { position: relative; z-index: 2; }
+
+  .admission-title { font-family: 'Playfair Display', serif; font-size: clamp(30px, 5vw, 56px); font-weight: 900; color: white; margin-bottom: 10px; }
+  .admission-sub { font-size: 18px; color: var(--lime); font-weight: 600; margin-bottom: 20px; }
+  .admission-desc { color: rgba(255,255,255,0.65); font-size: 15px; line-height: 1.8; max-width: 500px; margin-bottom: 36px; }
+
+  .reg-cards { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .reg-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 22px 20px;
+    flex: 1;
+    min-width: 180px;
+    transition: all 0.3s;
+  }
+
+  .reg-card:hover { background: rgba(109,190,71,0.12); border-color: rgba(109,190,71,0.4); transform: translateY(-4px); }
+
+  .reg-card-icon { font-size: 28px; margin-bottom: 12px; }
+  .reg-card-title { font-size: 14px; font-weight: 700; color: white; margin-bottom: 6px; }
+  .reg-card-detail { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.5; margin-bottom: 14px; }
+  .reg-card-date { font-size: 11px; font-weight: 600; color: var(--lime); display: flex; align-items: center; gap: 5px; }
+
+  .btn-register {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+    color: white;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.25s;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-register:hover { color: white; opacity: 0.9; transform: translateY(-2px); }
+
+  /* ====== CONTACT ====== */
+  .contact-section { background: var(--offwhite); }
+
+  .contact-card {
+    background: white;
+    border-radius: 24px;
+    padding: 36px 32px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .contact-item:last-child { border-bottom: none; }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .ci-green { background: rgba(11,123,108,0.1); color: var(--teal); }
+  .ci-wa { background: rgba(37,211,102,0.12); color: #25D366; }
+  .ci-mail { background: rgba(200,168,75,0.12); color: var(--gold); }
+  .ci-loc { background: rgba(13,33,73,0.1); color: var(--navy); }
+
+  .contact-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-mid); margin-bottom: 4px; }
+  .contact-value { font-size: 15px; font-weight: 600; color: var(--text-dark); text-decoration: none; }
+  .contact-value:hover { color: var(--teal); }
+
+  /* map placeholder */
+  .map-placeholder {
+    background: linear-gradient(135deg, #0D2149, #0B3A30);
+    border-radius: 24px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    gap: 12px;
+  }
+
+  .map-placeholder i { font-size: 48px; color: var(--lime); }
+  .map-placeholder p { font-size: 14px; line-height: 1.6; }
+  .map-placeholder strong { color: white; }
+
+  /* ====== WHATSAPP FLOAT ====== */
+  .wa-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    z-index: 9999;
+    box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: all 0.3s;
+    animation: wa-pulse 2.5s infinite;
+  }
+
+  @keyframes wa-pulse {
+    0%,100% { box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 8px 50px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
+  }
+
+  .wa-float:hover { color: white; transform: scale(1.1); background: #1ebe5d; }
+
+  /* ====== FOOTER ====== */
+  footer {
+    background: #060F20;
+    color: rgba(255,255,255,0.6);
+    padding: 40px 0 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; color: white; margin-bottom: 8px; }
+  .footer-tagline { font-size: 12px; color: var(--lime); letter-spacing: 1px; margin-bottom: 16px; }
+  .footer-desc { font-size: 13px; line-height: 1.7; max-width: 300px; }
+
+  .footer-links h6 { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+  .footer-links a { display: block; color: rgba(255,255,255,0.6); font-size: 13.5px; text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--lime); }
+
+  .social-links { display: flex; gap: 10px; margin-top: 16px; }
+  .social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.6);
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+  .social-link:hover { background: var(--teal); border-color: var(--teal); color: white; }
+
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 32px; padding-top: 20px; font-size: 12.5px; }
+
+  /* ====== SCROLL REVEAL ====== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ====== WELCOME POPUP ====== */
+  .welcome-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+    padding: 18px;
+    background: rgba(6, 15, 32, 0.58);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  .welcome-popup.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .welcome-popup.welcome-hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .welcome-card {
+    width: min(440px, 100%);
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.7);
+    position: relative;
+    transform: translateY(16px) scale(0.97);
+    transition: transform 0.35s ease;
+    overflow: hidden;
+  }
+
+  .welcome-popup.show .welcome-card { transform: translateY(0) scale(1); }
+
+  .welcome-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--teal), var(--lime), var(--gold));
+  }
+
+  .welcome-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--light-gray);
+    color: var(--navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    transition: all 0.2s;
+  }
+
+  .welcome-close:hover { background: var(--navy); color: white; }
+  .welcome-logo { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--lime)); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 22px; margin-bottom: 18px; }
+  .welcome-kicker { font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+  .welcome-title { font-family: 'Playfair Display', serif; color: var(--navy); font-size: clamp(28px, 6vw, 38px); line-height: 1.05; margin-bottom: 12px; font-weight: 900; }
+  .welcome-text { color: var(--text-mid); font-size: 14.5px; line-height: 1.7; margin-bottom: 20px; }
+  .welcome-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .welcome-actions .btn-primary-hero { padding: 11px 18px; font-size: 12.5px; box-shadow: none; }
+  .welcome-actions .welcome-secondary { color: var(--teal); font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; padding: 10px 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .welcome-popup,
+    .welcome-card,
+    .reveal,
+    .hero-float-card,
+    .wa-float {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  /* ====== RESPONSIVE ====== */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(6,15,32,0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero {
+      min-height: auto;
+      padding-bottom: 64px;
+    }
+
+    .hero-content { text-align: center; }
+    .hero-eyebrow,
+    .hero-desc { margin-left: auto; margin-right: auto; }
+    .hero-ctas,
+    .hero-stats { justify-content: center; }
+    .hero-stat-item { text-align: center; }
+    .hero-image-col { margin-top: 34px; }
+  }
+
+  @media (max-width: 768px) {
+    section { padding: 64px 0; }
+    .hero { padding-top: 96px; }
+    .hero-main-img { width: 240px; height: 240px; }
+    .hero-badge { right: -2px; bottom: 8px; min-width: 104px; padding: 10px 12px; }
+    .hero-float-card { display: none; }
+    .hero-stats { gap: 18px; }
+    .section-title { font-size: clamp(28px, 9vw, 38px); }
+    .about-card, .session-card, .contact-card { padding: 28px 22px; border-radius: 18px; }
+    .founder-card { padding: 30px 20px; border-radius: 20px; }
+    .founder-avatar { width: 100px; height: 100px; }
+    .team-card { padding: 22px 14px; border-radius: 16px; }
+    .team-avatar { width: 76px; height: 76px; }
+    .reg-card { min-width: 140px; }
+    .contact-item { gap: 12px; }
+    .wa-float { bottom: 20px; right: 20px; width: 52px; height: 52px; font-size: 24px; }
+    .footer-bottom { text-align: center; justify-content: center !important; }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand { gap: 9px; }
+    .brand-logo-circle { width: 40px; height: 40px; }
+    .brand-text-main { font-size: 14px; }
+    .brand-text-sub { font-size: 9px; letter-spacing: 1px; }
+    .hero-ctas { flex-direction: column; align-items: stretch; }
+    .btn-primary-hero, .btn-outline-hero { text-align: center; justify-content: center; width: 100%; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; }
+    .stat-num { font-size: 26px; }
+    .stat-label { font-size: 10.5px; }
+    .reg-cards { flex-direction: column; }
+    .team-name { font-size: 13.5px; min-height: 34px; display: flex; align-items: center; justify-content: center; }
+    .team-qual { font-size: 10px; padding: 3px 8px; }
+    .welcome-card { padding: 24px 18px 20px; border-radius: 18px; }
+    .welcome-actions { flex-direction: column; }
+    .welcome-actions .btn-primary-hero,
+    .welcome-actions .welcome-secondary { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- WELCOME POPUP -->
+<div class="welcome-popup" id="welcomePopup" role="dialog" aria-modal="false" aria-label="Welcome to Sibgha Doctors Academy">
+  <div class="welcome-card">
+    <button class="welcome-close" type="button" data-close-welcome aria-label="Close welcome popup">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="welcome-logo">S</div>
+    <div class="welcome-kicker">Admissions Open 2026</div>
+    <h2 class="welcome-title">Welcome to Sibgha Doctors Academy</h2>
+    <p class="welcome-text">Doctor-led coaching for Matric, FSC, O-Level and A-Level students in Gujranwala.</p>
+    <div class="welcome-actions">
+      <a href="#admission" class="btn-primary-hero" data-close-welcome><i class="fas fa-graduation-cap"></i> Apply Now</a>
+      <a href="https://wa.me/923353940362" target="_blank" class="welcome-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="brand-logo-circle">S</div>
+      <div>
+        <div class="brand-text-main">Sibgha Doctors Academy</div>
+        <div class="brand-text-sub">Learn · Understand · Heal · Lead</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sessions">Sessions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#admission">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn-wa-nav" href="https://wa.me/923353940362" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-dots"></div>
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6 hero-content">
+        <div class="hero-eyebrow">
+          <span></span>
+          Admissions Open · June 2026
+        </div>
+        <h1 class="hero-name">Dr. <span class="accent">Saram</span><br>Ahsan</h1>
+        <p class="hero-role">MBBS Graduate · Educator · Founder, Sibgha Doctors Academy</p>
+        <h2 class="hero-tagline">Doctors Teaching<br><span class="teal-text">Future Doctors</span></h2>
+        <p class="hero-desc">Graduating as an MBBS doctor while shaping the next generation of medical students. Expert guidance in Physics, Chemistry, Biology, Math & English — for Matric, FSC, O-Level & A-Level students.</p>
+        <div class="hero-ctas">
+          <a href="#admission" class="btn-primary-hero">
+            <i class="fas fa-graduation-cap"></i> Apply Now
+          </a>
+          <a href="https://wa.me/923353940362" class="btn-outline-hero" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Years Teaching</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Expert Doctors</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="stat-num">5</div>
+            <div class="stat-label">Core Subjects</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-image-col">
+        <div class="hero-img-wrapper">
+          <div class="hero-main-img"><img src="assets/saram-ahsan.jpg" alt="Dr. Saram Ahsan" width="1000" height="1000" loading="eager" fetchpriority="high"></div>
+          <div class="hero-badge">
+            <div class="badge-num">MBBS</div>
+            <div class="badge-txt">Doctor · Educator</div>
+          </div>
+          <div class="hero-float-card">
+            <div class="float-icon"><i class="fas fa-stethoscope"></i></div>
+            <div class="float-text">
+              <div class="f-main">Doctor-led Teaching</div>
+              <div class="f-sub">Real Clinical Insight</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <div class="section-eyebrow justify-content-center">About the Founder</div>
+        <h2 class="section-title">The Mind Behind <span class="accent">Sibgha Academy</span></h2>
+      </div>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-5 reveal">
+        <div class="about-card">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="about-avatar"><img src="assets/saram-ahsan.jpg" alt="Dr. Saram Ahsan" width="1000" height="1000" loading="lazy" decoding="async"></div>
+            <div>
+              <div class="about-name">Dr. Saram Ahsan</div>
+              <span class="about-title-tag">MBBS Graduate · Founder & Admin</span>
+            </div>
+          </div>
+          <p class="about-bio">An MBBS graduate who has been passionately shaping future doctors for the last 4 years. Dr. Saram Ahsan combines clinical knowledge with expert pedagogical skills to make complex subjects accessible and engaging for every student.</p>
+          <div class="d-flex flex-wrap">
+            <span class="info-pill"><i class="fas fa-map-marker-alt"></i> Wapda Town, Gujranwala</span>
+            <span class="info-pill"><i class="fas fa-clock"></i> 4+ Years Experience</span>
+            <span class="info-pill"><i class="fas fa-stethoscope"></i> MBBS Doctor</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="about-card h-100">
+          <h4 class="fw-bold mb-3" style="color:var(--navy); font-family:'Playfair Display',serif;">Subjects We Master</h4>
+          <div class="subject-grid mb-4">
+            <span class="subject-tag"><i class="fas fa-flask me-1"></i> Chemistry</span>
+            <span class="subject-tag"><i class="fas fa-atom me-1"></i> Physics</span>
+            <span class="subject-tag"><i class="fas fa-dna me-1"></i> Biology</span>
+            <span class="subject-tag"><i class="fas fa-calculator me-1"></i> Mathematics</span>
+            <span class="subject-tag"><i class="fas fa-book-open me-1"></i> English</span>
+          </div>
+          <h5 class="fw-bold mb-3" style="color:var(--navy);">Students We Serve</h5>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background:var(--light-gray);">
+                <i class="fas fa-school" style="color:var(--teal);"></i>
+                <div>
+                  <div style="font-weight:700;font-size:13px;color:var(--navy);">Matriculation</div>
+                  <div style="font-size:11px;color:var(--text-mid);">SSC / Grade 9–10</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background:var(--light-gray);">
+                <i class="fas fa-microscope" style="color:var(--teal);"></i>
+                <div>
+                  <div style="font-weight:700;font-size:13px;color:var(--navy);">FSC Pre-Medical</div>
+                  <div style="font-size:11px;color:var(--text-mid);">HSSC / Grade 11–12</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background:var(--light-gray);">
+                <i class="fas fa-globe" style="color:var(--teal);"></i>
+                <div>
+                  <div style="font-weight:700;font-size:13px;color:var(--navy);">O-Level Cambridge</div>
+                  <div style="font-size:11px;color:var(--text-mid);">IGCSE / Cambridge</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background:var(--light-gray);">
+                <i class="fas fa-award" style="color:var(--teal);"></i>
+                <div>
+                  <div style="font-weight:700;font-size:13px;color:var(--navy);">A-Level Cambridge</div>
+                  <div style="font-size:11px;color:var(--text-mid);">AS & A Level</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SESSIONS -->
+<section class="sessions-section" id="sessions">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <div class="section-eyebrow justify-content-center">Learning Sessions</div>
+        <h2 class="section-title">Two Ways to <span class="accent">Excel</span></h2>
+        <p class="section-sub mx-auto">Choose the session format that fits your learning style — structured group lectures or focused one-on-one mentorship.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 reveal">
+        <div class="session-card session-card-1">
+          <div class="session-time-badge">
+            <i class="fas fa-clock"></i> 4:00 PM – 7:00 PM
+          </div>
+          <div class="session-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="session-title">Lecture-Based Classes</div>
+          <p class="session-desc">Structured, concept-driven group sessions led by expert doctor-educators. Build strong foundations and deepen your understanding through interactive teaching.</p>
+          <ul class="session-features">
+            <li><i class="fas fa-check-circle"></i> Concept-based teaching methodology</li>
+            <li><i class="fas fa-check-circle"></i> Regular doubt clearing sessions</li>
+            <li><i class="fas fa-check-circle"></i> Weekly assessments & mock tests</li>
+            <li><i class="fas fa-check-circle"></i> Physical classes on-campus</li>
+            <li><i class="fas fa-check-circle"></i> Competitive exam preparation (MDCAT, SAT)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="session-card session-card-2">
+          <div class="session-time-badge">
+            <i class="fas fa-clock"></i> 7:00 PM – 10:00 PM
+          </div>
+          <div class="session-icon"><i class="fas fa-user-graduate"></i></div>
+          <div class="session-title">One-to-One Sessions</div>
+          <p class="session-desc">Personalized mentorship tailored entirely to you. Dr. Saram Ahsan gives you undivided attention to target your weaknesses and sharpen your strengths.</p>
+          <ul class="session-features">
+            <li><i class="fas fa-check-circle"></i> Fully personalized learning plan</li>
+            <li><i class="fas fa-check-circle"></i> Individual pace & focus areas</li>
+            <li><i class="fas fa-check-circle"></i> Direct mentorship by Dr. Saram Ahsan</li>
+            <li><i class="fas fa-check-circle"></i> Intensive exam strategy coaching</li>
+            <li><i class="fas fa-check-circle"></i> Flexible scheduling available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <div class="section-eyebrow justify-content-center">Expert Faculty</div>
+        <h2 class="section-title">Meet Our <span style="color:var(--lime);">Doctor-Educators</span></h2>
+        <p class="section-sub mx-auto" style="color:rgba(255,255,255,0.6);">Every teacher at Sibgha Doctors Academy is a qualified medical professional — bringing real clinical knowledge into the classroom.</p>
+      </div>
+    </div>
+
+    <!-- Founder -->
+    <div class="row justify-content-center mb-4 reveal">
+      <div class="col-lg-6">
+        <div class="founder-card">
+          <div class="founder-avatar"><img src="assets/saram-ahsan.jpg" alt="Dr. Saram Ahsan" width="1000" height="1000" loading="lazy" decoding="async"></div>
+          <div class="founder-name">Dr. Saram Ahsan</div>
+          <div class="founder-role">🎓 MBBS Graduate · Founder & Lead Educator</div>
+          <p class="founder-desc">Graduating as an MBBS doctor while actively teaching for 4+ years. Master in English, Physics, Mathematics, Biology & Chemistry. The visionary founder driving Sibgha Doctors Academy's mission.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="row g-4 reveal">
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><img src="assets/dr-mubeen.jpg" alt="Dr. Mubeen Shafeeq" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="team-name">Dr. Mubeen Shafeeq</div>
+          <span class="team-qual">MPhil – PhD</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><span>Z</span></div>
+          <div class="team-name">Dr. Zaeem Ul Saqib Tariq</div>
+          <span class="team-qual">MBBS · Medical Officer</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><span>M</span></div>
+          <div class="team-name">Dr. Mubeen Ahmed</div>
+          <span class="team-qual">MBBS 3rd Year</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><img src="assets/dr-bilal-sultani.jpg" alt="Dr. Bilal Sultani" width="587" height="661" loading="lazy" decoding="async"></div>
+          <div class="team-name">Dr. Bilal Sultani</div>
+          <span class="team-qual">MBBS 3rd Year</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><img src="assets/dr-sibgha-tabassum.jpg" alt="Dr. Sibgha Tabassum" width="624" height="850" loading="lazy" decoding="async"></div>
+          <div class="team-name">Dr. Sibgha Tabassum</div>
+          <span class="team-qual">MBBS 3rd Year</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="team-card h-100">
+          <div class="team-avatar"><img src="assets/dr-aiza-gondal.jpg" alt="Dr. Aiza Gondal" width="900" height="900" loading="lazy" decoding="async"></div>
+          <div class="team-name">Dr. Aiza Gondal</div>
+          <span class="team-qual">MBBS 3rd Year</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <div class="section-eyebrow justify-content-center">Why Choose Us</div>
+        <h2 class="section-title">Learning at Its <span class="accent">Best</span></h2>
+        <p class="section-sub mx-auto">We don't just teach — we mentor, guide, and inspire students to reach their highest potential.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-stethoscope"></i></div>
+          <div class="why-title">Expert Doctors as Mentors</div>
+          <p class="why-desc">All teachers are qualified MBBS doctors who bring real medical knowledge and passion into their teaching, making complex concepts relatable.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-brain"></i></div>
+          <div class="why-title">Concept-Based Learning</div>
+          <p class="why-desc">We focus on deep understanding rather than rote memorization — students learn to think, reason, and apply knowledge in exams and real life.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="why-title">Regular Assessments</div>
+          <p class="why-desc">Frequent tests, quizzes, and doubt sessions to track progress and ensure no student falls behind, with personalized feedback every step.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-target"></i></div>
+          <div class="why-title">Competitive Exam Prep</div>
+          <p class="why-desc">Targeted preparation for MDCAT, SAT, and Cambridge exams with strategy sessions, past papers, and time management training.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <div class="why-title">Safe & Supportive Environment</div>
+          <p class="why-desc">A motivating, inclusive classroom where students feel safe to ask questions, make mistakes, and grow without judgment.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-laptop"></i></div>
+          <div class="why-title">Modern Classrooms</div>
+          <p class="why-desc">Well-equipped on-campus facilities designed for focused learning, with the tools and environment students need to succeed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION CTA -->
+<section class="admission-section py-5" id="admission">
+  <div class="container">
+    <div class="admission-content">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 reveal">
+          <div class="section-eyebrow" style="color:var(--lime);">Admissions 2026</div>
+          <h2 class="admission-title">Admission<br><span style="color:var(--lime);">Open Now</span></h2>
+          <p class="admission-sub"><i class="fas fa-stethoscope me-2"></i>Doctors will teach the Upcoming Doctors</p>
+          <p class="admission-desc">Take the first step toward your medical future. Choose a registration type below and secure your place at Sibgha Doctors Academy.</p>
+          <a href="https://wa.me/923353940362?text=Hi%2C%20I%20want%20to%20know%20more%20about%20admissions%20at%20Sibgha%20Doctors%20Academy." class="btn-primary-hero" target="_blank">
+            <i class="fab fa-whatsapp"></i> Enquire on WhatsApp
+          </a>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="reg-cards">
+            <div class="reg-card">
+              <div class="reg-card-icon">🎓</div>
+              <div class="reg-card-title">Free Trial Classes</div>
+              <p class="reg-card-detail">Experience our quality education absolutely free — no commitment needed!</p>
+              <div class="reg-card-date"><i class="fas fa-calendar-alt"></i> 29–30 June, 2026 &nbsp;|&nbsp; 4–8 PM</div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXR4r543SYQAE0JVpeEpAuL7QyHnILtdCCmEWqxEDs1k5kBg/viewform?usp=dialog" class="btn-register" target="_blank">
+                <i class="fas fa-arrow-right"></i> Register Free
+              </a>
+            </div>
+            <div class="reg-card">
+              <div class="reg-card-icon">🏆</div>
+              <div class="reg-card-title">Scholarship Test</div>
+              <p class="reg-card-detail">Take the test and win exciting scholarship opportunities at Sibgha Academy!</p>
+              <div class="reg-card-date"><i class="fas fa-calendar-alt"></i> 1 July, 2026 &nbsp;|&nbsp; 4–8 PM</div>
+              <a href="https://forms.gle/X5an556Y8qF3LzFs8" class="btn-register" target="_blank">
+                <i class="fas fa-arrow-right"></i> Apply for Scholarship
+              </a>
+            </div>
+            <div class="reg-card">
+              <div class="reg-card-icon">📝</div>
+              <div class="reg-card-title">Regular Admission</div>
+              <p class="reg-card-detail">Begin your journey toward a brighter future. Open for all students!</p>
+              <div class="reg-card-date"><i class="fas fa-users"></i> Open for All Students</div>
+              <a href="https://forms.gle/Di3SJNqvevqtPopL8" class="btn-register" target="_blank">
+                <i class="fas fa-arrow-right"></i> Apply Regular
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <div class="section-eyebrow justify-content-center">Get in Touch</div>
+        <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+        <p class="section-sub mx-auto">Ready to start your journey? Reach out — we're here to help you every step of the way.</p>
+      </div>
+    </div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5 reveal">
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon ci-loc"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Our Location</div>
+              <div class="contact-value">House #403, Block C2, Wapda Town, Gujranwala</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon ci-green"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Call Us</div>
+              <a href="tel:+923414312504" class="contact-value d-block">0341-4312504</a>
+              <a href="tel:+923353940362" class="contact-value d-block">0335-3940362</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon ci-wa"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-label">WhatsApp</div>
+              <a href="https://wa.me/923353940362" target="_blank" class="contact-value">0335-3940362</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon ci-mail"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:sibghadoctorsacademy@gmail.com" class="contact-value">sibghadoctorsacademy@gmail.com</a>
+            </div>
+          </div>
+          <div class="mt-4 d-flex gap-3">
+            <a href="https://wa.me/923353940362" target="_blank" class="btn-primary-hero w-100 justify-content-center text-center" style="text-decoration:none;">
+              <i class="fab fa-whatsapp"></i> Message on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <div>
+            <strong>House #403, Block C2</strong><br>
+            <p>Wapda Town, Gujranwala, Pakistan</p>
+            <a href="https://wa.me/923353940362?text=I%20need%20directions%20to%20Sibgha%20Doctors%20Academy" target="_blank" style="color:var(--lime);font-size:13px;font-weight:600;text-decoration:none;"><i class="fas fa-directions me-1"></i>Ask for Directions via WhatsApp</a>
+          </div>
+        </div>
+        <!-- Social & Follow -->
+        <div class="mt-4 p-4 rounded-4" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,0.06);">
+          <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:12px;letter-spacing:0.5px;">FOLLOW US ON SOCIAL MEDIA</div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="https://facebook.com/sibghadoctor" target="_blank" class="d-flex align-items-center gap-2 text-decoration-none p-2 px-3 rounded-3" style="background:#EEF2F7;color:#1877F2;font-size:13px;font-weight:600;">
+              <i class="fab fa-facebook-f"></i> /sibghadoctor
+            </a>
+            <a href="https://instagram.com/sibgha.academy" target="_blank" class="d-flex align-items-center gap-2 text-decoration-none p-2 px-3 rounded-3" style="background:#EEF2F7;color:#E1306C;font-size:13px;font-weight:600;">
+              <i class="fab fa-instagram"></i> /sibgha.academy
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Sibgha Doctors Academy</div>
+        <div class="footer-tagline">LEARN · UNDERSTAND · HEAL · LEAD</div>
+        <p class="footer-desc">A project by Sibgha Therapy Academy — dedicated to shaping future doctors through expert mentorship and world-class education in Gujranwala.</p>
+        <div class="social-links">
+          <a href="https://facebook.com/sibghadoctor" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/sibgha.academy" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/923353940362" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 footer-links">
+        <h6>Navigation</h6>
+        <a href="#about">About Dr. Saram</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#team">Our Team</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#admission">Admissions</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="col-6 col-lg-3 footer-links">
+        <h6>Admissions</h6>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXR4r543SYQAE0JVpeEpAuL7QyHnILtdCCmEWqxEDs1k5kBg/viewform?usp=dialog" target="_blank">Free Trial Classes</a>
+        <a href="https://forms.gle/X5an556Y8qF3LzFs8" target="_blank">Scholarship Test</a>
+        <a href="https://forms.gle/Di3SJNqvevqtPopL8" target="_blank">Regular Admission</a>
+        <a href="https://sibghadoctorsacademy.com/register" target="_blank">Official Register Link</a>
+      </div>
+      <div class="col-lg-3 footer-links">
+        <h6>Contact</h6>
+        <a href="tel:+923414312504"><i class="fas fa-phone me-2"></i>0341-4312504</a>
+        <a href="tel:+923353940362"><i class="fas fa-phone me-2"></i>0335-3940362</a>
+        <a href="https://wa.me/923353940362" target="_blank"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+        <a href="mailto:sibghadoctorsacademy@gmail.com"><i class="fas fa-envelope me-2"></i>Email Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>© 2026 Sibgha Doctors Academy. All rights reserved.</div>
+      <div style="color:var(--lime);font-weight:600;font-size:12px;">Together, Let's Build Doctors. Together, Let's Heal Tomorrow.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/923353940362?text=Hi%2C%20I%20want%20to%20know%20about%20Sibgha%20Doctors%20Academy%20admissions." class="wa-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Navbar scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Smooth active nav link
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.style.color = '';
+      if (link.getAttribute('href') === '#' + current) link.style.color = '#6DBE47';
+    });
+  });
+  // Welcome popup: visible for 5 seconds on page load
+  const welcomePopup = document.getElementById('welcomePopup');
+  const closeWelcomeTriggers = document.querySelectorAll('[data-close-welcome]');
+  const closeWelcomePopup = () => {
+    if (!welcomePopup || welcomePopup.classList.contains('welcome-hide')) return;
+    welcomePopup.classList.add('welcome-hide');
+    welcomePopup.classList.remove('show');
+    setTimeout(() => welcomePopup.remove(), 400);
+  };
+
+  function initWelcomePopup() {
+    if (!welcomePopup) return;
+    requestAnimationFrame(() => welcomePopup.classList.add('show'));
+    setTimeout(closeWelcomePopup, 5000);
+  }
+
+  window.addEventListener('load', initWelcomePopup);
+  closeWelcomeTriggers.forEach(trigger => trigger.addEventListener('click', closeWelcomePopup));
+</script>
+</body>
+</html>
